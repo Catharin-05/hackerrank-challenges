@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import calendar
+
+input_date = input()
+year = int(input_date[-4:])
+date = int(input_date[3:5])
+month = int(input_date[:2])
+day_names = calendar.day_name
+day_name_num = calendar.weekday(year, month, date)
+print((day_names[day_name_num]).upper())
